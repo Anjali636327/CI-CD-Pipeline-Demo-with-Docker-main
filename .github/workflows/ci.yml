@@ -30,6 +30,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: Dockerfile  # Ensure this is the correct path if Dockerfile is inside a folder
+          file: ./Dockerfile  # ✅ Corrected path to Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ci-cd-demo:latest
