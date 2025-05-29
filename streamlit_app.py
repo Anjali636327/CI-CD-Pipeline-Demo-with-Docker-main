@@ -176,4 +176,6 @@ if st.button("Predict Price"):
         return prediction
 
     prediction = predict_price(input_data)
+    st.write("Welcome to my updated app!")
+
     st.success(f"Estimated Selling Price: ₹{prediction[0]:,.2f}")
