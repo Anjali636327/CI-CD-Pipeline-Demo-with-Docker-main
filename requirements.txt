@@ -1,5 +1,7 @@
 flask==2.1.2
-scikit-learn==0.24.2
-numpy==1.20.3
-pandas==1.3.3
-gunicorn==20.1.0  # to run your app in production
+scikit-learn==1.6.1
+numpy==1.24.4
+pandas==2.2.3
+gunicorn==20.1.0
+streamlit==1.45.1
+joblib==1.5.1

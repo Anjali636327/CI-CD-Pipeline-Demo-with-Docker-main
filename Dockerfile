@@ -4,5 +4,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY . .
-EXPOSE 5000
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "app:app"]
+
+EXPOSE 8501
+CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
